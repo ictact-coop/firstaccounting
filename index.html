@@ -45,7 +45,7 @@ contributors:
     <div class="columns is-centered">
       <div class="column is-two-thirds-tablet">
         <figure class="image">
-          <img src="/assets/{{ page.main_image }}">
+          <img src="{{ '/assets/' | append: page.main_image | relative_url }}">
         </figure>
       </div>
     </div>

@@ -8,7 +8,7 @@
     {% if google_site_verification %}<meta name="google-site-verification" content="{{ site.google_site_verification }}" />{% endif %}
     <meta name="description" content="{% if page.description %}{{ page.description }}{% else %}{{ site.description }}{% endif %}">
     <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/bulma/0.6.2/css/bulma.min.css" />
-    <link rel="stylesheet" href="/assets/main.css">
+    <link rel="stylesheet" href="{{ '/assets/main.css' | relative_url }}">
   </head>
   <body{% if page.url %} class="{{ page.url | replace:'/',' ' | lstrip | rstrip }}{% if page.url == '/' %}front{% endif %}"{% endif %}>
 
