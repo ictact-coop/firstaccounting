@@ -7,7 +7,7 @@ address: 서울특별시 은평구 통일로 684 서북50플러스캠퍼스 3층
 location: http://naver.me/5j3lxIaD
 
 url:
-baseurl: "/firstaccounting"
+baseurl: ""
 timezone: 'Asia/Seoul'
 permalink: pretty
 
