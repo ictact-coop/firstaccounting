@@ -1,6 +1,15 @@
 ---
 layout: default
 main_image: screenshot.png
+hero:
+  download:
+    icon: fas fa-arrow-alt-circle-down
+    text: 내려받기
+    link:
+  manual:
+    icon: fas fa-book
+    text: 안내서
+    link: https://blog.naver.com/PostList.nhn?blogId=kwleecj&from=postList&categoryNo=1&parentCategoryNo=1
 about:
   title: |
     소규모 NPO의 자금관리와 사업 실적분석을 위한
@@ -37,6 +46,9 @@ contributors:
       <h2 class="subtitle is-4">{{ site.title }}</h2>
       <a href="{{ site.latest_release_url }}" class="button is-black is-large">
         <i class="fas fa-arrow-alt-circle-down" style="color: #fff"></i> &nbsp; 내려받기
+      </a>
+      <a href="{{ page.hero.manual.link }}" class="button is-black is-large btn-manual" target="_blank">
+        <i class="{{ page.hero.manual.icon }}" style="color: #fff"></i> &nbsp; {{ page.hero.manual.text }}
       </a>
     </div>
   </div>
