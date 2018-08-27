@@ -4,8 +4,10 @@ main_image: screenshot.png
 hero:
   download:
     icon: fas fa-arrow-alt-circle-down
-    text: 내려받기
-    link:
+    text: 정식 내려받기
+  download_demo:
+    icon: fas fa-arrow-alt-circle-down
+    text: 데모 내려받기
   manual:
     icon: fas fa-book
     text: 안내서
@@ -45,7 +47,10 @@ contributors:
       <h2 class="subtitle is-4">{{ site.slogan }}</h2>
       <h2 class="subtitle is-4">{{ site.title }}</h2>
       <a href="{{ site.latest_release_url }}" class="button is-black is-large">
-        <i class="fas fa-arrow-alt-circle-down" style="color: #fff"></i> &nbsp; 내려받기
+        <i class="fas fa-arrow-alt-circle-down" style="color: #fff"></i> &nbsp; {{ page.hero.download.text }}<br>
+      </a>
+      <a href="{{ site.latest_demo_release_url }}" class="button is-black is-large">
+        <i class="fas fa-arrow-alt-circle-down" style="color: #fff"></i> &nbsp; {{ page.hero.download_demo.text }}<br>
       </a>
       <a href="{{ page.hero.manual.link }}" class="button is-black is-large btn-manual" target="_blank">
         <i class="{{ page.hero.manual.icon }}" style="color: #fff"></i> &nbsp; {{ page.hero.manual.text }}
